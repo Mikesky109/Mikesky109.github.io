@@ -28,7 +28,6 @@ div#heading {
 }
 div.self-information {
     background-image: url("Paper.jpg");
-    width:100%;
     height:40%;
     text-align: center;
 }
@@ -36,18 +35,45 @@ div.title{
     padding: 50px 0;
     font-size: 40px;
 }
-div.self-information{
-    display:inline-block;
-}
 div.self-descript {
-    padding: 0 5%;
+    padding: 0 30%;
     font-size: 30px;
-    display:inline-block;
-    vertical-align: top;
 }
+div.full-name {
+    overflow: hidden;
+    border-right: .10em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+        typing 3s steps(40, end) infinite,
+        blink-caret .75s step-end infinite;
+}
+div.nick-name {
+    overflow: hidden;
+    border-right: .10em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+        typing 3s steps(40, end) infinite,
+        blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
 div.self-img{
     padding: 0 5%;
-    display:inline-block;
+    vertical-align: bottom;
+    float:left;
 }
 div.link a.content{
     text-decoration: none;
@@ -119,15 +145,20 @@ li {
 /* End Resume CSS */
 
 /* Skills CSS*/
+div#skill {
+    padding: 20px 0;
+}
 div.skill1-detail{
-    padding: 0 10px 20px 10px;
+    padding: 0 10px 0 10px;
+}
+div.skill-content {
+    padding: 5px 0;
 }
 div.skill {
-    text-align: center;
     background-color:gainsboro;
-    height: 100px;
+    height: auto;
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px 20px;
     display: none;
     border-style: double;
 }
@@ -145,6 +176,13 @@ td button{
     height: 100%;
     text-align: center;
     background-color:rgb(180, 220, 255);
+}
+a.project-link {
+    text-decoration: none;
+    color: black;
+    background-color: floralwhite;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 div#end {
     border-top: 2px solid black;

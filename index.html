@@ -11,7 +11,7 @@
                     <a href="#part1"><i class="fa fa-home" style="float: left; font-size:30px; color: black;"></i></a>
                     <button><i><a class="content link" href="#about">About</a></i></button>
                     <button><i><a class="content link" href="#resume">Resume</a></i></button>
-                    <button><i><a class="content link" href="#skill">Skills</a></i></button>
+                    <button><i><a class="content link" href="#skill">Skills & Project</a></i></button>
                 </div>
             </div>
         </div>
@@ -20,26 +20,35 @@
             <div id="part1" class="self-information">
                 <div class="title">
                     <i>Welcome to Mike's Home Page</i>
-                </div>  
-                <div class="self-information">
+                </div>
+                
+                <div style="text-align: center;">
                     <div class="self-descript">
-                        <i>SIN Kwo Yin</i>
+                        <div class="full-name">
+                            <i>SIN Kwo Yin</i>
+                        </div>
                         <br>
-                        <i>Mike</i>
+                        <div class="nick-name">
+                            <i>Mike</i>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Part 2: Self-Intro --> 
             <div id="about">
-                <h2 class = "session-heading"><u>About</u></h2>
-                <p style="line-height: 1.5;">
-                    I am a final-year computing student at Hong Kong PolyU with intern experience in <b style="color:cornflowerblue">application development</b>.
-                    While my study and intern period, I have experience in data-analysis project including <u><i>Web-Scrapping</i></u>, <u><i>AI</i></u> and <u><i>Data modeling</i></u>.
-                    I am also a <b style="color:cornflowerblue">quick learner</b> who can pick up a new skills quickly. In my internskip I have self-study for VBA and Selenium knowledge.
-                </p>
-                <div class="self-img">
-                    <img src="Self-pict.jpg" width="150" height="150" style="float:left;">
+                <div style="display:inline-block;">
+                    <h2 class = "session-heading"><u>About</u></h2>
+                    <div class="self-img">
+                        <img src="Self-pict.jpg" width="150" height="150" style="float:left;">
+                    </div>
+                    <div class="self-intro">
+                        <p style="line-height: 1.5;">
+                            I am a final-year computing student at Hong Kong PolyU with intern experience in <b style="color:cornflowerblue">application development</b>.
+                            While my study and intern period, I have experience in data-analysis project including <u><i>Web-Scrapping</i></u>, <u><i>AI</i></u> and <u><i>Data modeling</i></u>.
+                            I am also a <b style="color:cornflowerblue">quick learner</b> who can pick up a new skills quickly. In my internskip I have self-study for VBA and Selenium knowledge.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -85,29 +94,86 @@
 
             <!-- Part 4: Hobby -->
             <div id="skill">
-                <h2 class = "session-heading"><u>Skills</u></h2>
+                <h2 class = "session-heading"><u>Skills & Project</u></h2>
                 <table>
                     <tr>
-                        <td><button onclick="myFunction('skill1-details', 'skill2-details', 'skill3-details', 'skill4-details')">Python</button></td>
-                        <td><button onclick="myFunction('skill2-details', 'skill1-details', 'skill3-details', 'skill4-details')">Java</button></td>
+                        <td><button onclick="myFunction('skill1-details')">Python</button></td>
+                        <td><button onclick="myFunction('skill2-details')">Java</button></td>
                     </tr>
                     <tr>
-                        <td><button onclick="myFunction('skill3-details', 'skill2-details', 'skill1-details', 'skill4-details')">C</button></td>
-                        <td><button onclick="myFunction('skill4-details', 'skill2-details', 'skill3-details', 'skill1-details')">VBA</button></td>
+                        <td><button onclick="myFunction('skill3-details')">C</button></td>
+                        <td><button onclick="myFunction('skill4-details')">VBA</button></td>
                     </tr>
                 </table>
                 <div class="skill1-detail">
-                    <div id="skill1-details" class="skill">
-                        This is my DIV1 element1.
+                    <div class="skill-content">
+                        <div id="skill1-details" class="skill">
+                            <h2 style="text-align: center;">* <u>Python</u> *</h2>
+                            <h3>knowledge:</h3>
+                            <ol style="padding: 5px 20px">
+                                <li>Graph Plotting</li>
+                                <li>Machine Learning</li>
+                                <li>Library: numpy, pyplot, pytourch, sklearn</li>
+                            </ol>
+                            <br>
+                            <h3>Projects:</h3>
+                            <div style="border: 1px dotted black; padding: 10px 0">
+                                <p stytle="padding: 0 20px">Using python to solve the Cross River Problem</p>
+                                <br>
+                                <a target="_blank" class="project-link" href="https://github.com/Mikesky109/Solving-Cross-River-Problem">View the Code</a>
+                            </div>
+                            <div style="border: 1px dotted black; padding: 10px 0">
+                                <p stytle="padding: 0 20px">Anomaly detection for blockchain network. Using different classification model and graph-learning method to spot some illegal address. </p>
+                                <br>
+                                <a target="_blank" class="project-link" href="https://github.com/Mikesky109/Blockchain-Anomaly-Detection">View the Code</a>
+                            </div>
+                        </div>
                     </div>
-                    <div id="skill2-details" class="skill">
-                        This is my DIV2 element1.
+                    <div class="skill-content">
+                        <div id="skill2-details" class="skill">
+                            <h2 style="text-align: center;">* <u>Java</u> *</h2>
+                            <h3>knowledge:</h3>
+                            <ol style="padding: 5px 20px">
+                                <li>Server Socket Program</li>
+                                <li>Oracle JDBC Application</li>
+                                <li>Sablecc Application</li>
+                            </ol>
+                            <br>
+                            <h3>Projects:</h3>
+                            <div style="border: 1px dotted black; padding: 10px 0">
+                                <p stytle="padding: 0 20px">Using Sablecc to deploy a new language gramma structure for 2D-Drawing.</p>
+                                <br>
+                                <a target="_blank" class="project-link" href="https://github.com/Mikesky109/New-Language-for-2D-drawing">View the Code</a>
+                            </div>
+                        </div>
                     </div>
-                    <div id="skill3-details" class="skill">
-                        This is my DIV3 element1.
+                    <div class="skill-content">
+                        <div id="skill3-details" class="skill">
+                            <h2 style="text-align: center;">* <u>C</u> *</h2>
+                            <h3>knowledge:</h3>
+                            <ol style="padding: 5px 20px">
+                                <li>Pointer, Linked List</li>
+                                <li>Stack Operation</li>
+                            </ol>
+                            <br>
+                            <h3>Projects:</h3>
+                            <div style="border: 1px dotted black; padding: 10px 0">
+                                <p stytle="padding: 0 20px">Develop a simple Candy Crush Game Without GUI design.</p>
+                                <br>
+                                <a target="_blank" class="project-link" href="https://github.com/Mikesky109/Candy-crash-in-C">View the Code</a>
+                            </div>
+                        </div>
                     </div>
-                    <div id="skill4-details" class="skill">
-                        This is my DIV4 element1.
+                    <div class="skill-content">
+                        <div id="skill4-details" class="skill">
+                            <h2 style="text-align: center;">* <u>VBA</u> *</h2>
+                            <h3>knowledge:</h3>
+                            <ol style="padding: 5px 20px">
+                                <li>Generate Word and Excel Report</li>
+                                <li>Selenium: Web-Scrapping</li>
+                                <li>Website Capture: PDF Export, Screen Shot</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,25 +185,13 @@
         </div>
 
         <script>
-            function myFunction(id1, id2, id3, id4) {
+            function myFunction(id1) {
               var x1 = document.getElementById(id1);
-              var x2 = document.getElementById(id2);
-              var x3 = document.getElementById(id3);
-              var x4 = document.getElementById(id4);
-              if (x2.style.display === "block") {
-                 x2.style.display = "none";
-              }
-              if (x3.style.display === "block") {
-                 x3.style.display = "none";
-              }
-              if (x4.style.display === "block") {
-                 x4.style.display = "none";
-              }
               if (x1.style.display === "block") {
                  x1.style.display = "none";
-                 x1.scrollIntoView();
               } else {
                  x1.style.display = "block";
+                 x1.scrollIntoView();
               }
             }
         </script>
