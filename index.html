@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="main.css" />
+        <title>Sin Kwo Yin</title>
+    </head>
+    <body>
+        <div id="heading">
+            <div>
+                <div class="link" style="text-align: right;">
+                    <a href="#part1"><i class="fa fa-home" style="float: left; font-size:30px; color: black;"></i></a>
+                    <button><i><a class="content link" href="#about">About</a></i></button>
+                    <button><i><a class="content link" href="#resume">Resume</a></i></button>
+                    <button><i><a class="content link" href="#skill">Skills</a></i></button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!-- Part 1: Name, Photo --> 
+            <div id="part1" class="self-information">
+                <div class="title">
+                    <i>Welcome to Mike's Home Page</i>
+                </div>  
+                <div class="self-information">
+                    <div class="self-descript">
+                        <i>SIN Kwo Yin</i>
+                        <br>
+                        <i>Mike</i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2: Self-Intro --> 
+            <div id="about">
+                <h2 class = "session-heading"><u>About</u></h2>
+                <p style="line-height: 1.5;">
+                    I am a final-year computing student at Hong Kong PolyU with intern experience in <b style="color:cornflowerblue">application development</b>.
+                    While my study and intern period, I have experience in data-analysis project including <u><i>Web-Scrapping</i></u>, <u><i>AI</i></u> and <u><i>Data modeling</i></u>.
+                    I am also a <b style="color:cornflowerblue">quick learner</b> who can pick up a new skills quickly. In my internskip I have self-study for VBA and Selenium knowledge.
+                </p>
+                <div class="self-img">
+                    <img src="Self-pict.jpg" width="150" height="150" style="float:left;">
+                </div>
+            </div>
+
+            <!-- Part 3: Resume --> 
+            <div id="resume">
+                <h2 class = "session-heading"><u>Resume</u></h2>
+                <div class="box"> 
+                    <div class="content">
+                        <h2><i>STEM Tutor</i></h2>
+                        <h4>Carmel Alison Lam Foundation Secondary School</h4>
+                        <h4>2018 - 2019</h4>
+                        <ul style="padding: 5px 20px">
+                            <li>Taught EV3 robots</li>
+                            <li>knowledge in building EV3 robots and programming</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box"> 
+                    <div class="content">
+                        <h2><i>Computer Technician</i></h2>
+                        <h4>Automated System Limited</h4>
+                        <h4>2019 - 2020</h4>
+                        <ul style="padding: 5px 20px">
+                            <li>Familiar with Domain and DNS</li>
+                            <li>Solving hardware and software problems</li>
+                            <li>Help desk technician</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box"> 
+                    <div class="content">
+                        <h2><i>Application Developer (Intern, Part-time)</i></h2>
+                        <h4>Central Business Information Limited</h4>
+                        <h4>2021 - Current</h4>
+                        <ul style="padding: 5px 20px">
+                            <li>Familiar with MS office and VBA</li>
+                            <li>Using VBA for automated generate report</li>
+                            <li>Using Selenium for Web-Scrapping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 4: Hobby -->
+            <div id="skill">
+                <h2 class = "session-heading"><u>Skills</u></h2>
+                <table>
+                    <tr>
+                        <td><button onclick="myFunction('skill1-details', 'skill2-details', 'skill3-details', 'skill4-details')">Python</button></td>
+                        <td><button onclick="myFunction('skill2-details', 'skill1-details', 'skill3-details', 'skill4-details')">Java</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="myFunction('skill3-details', 'skill2-details', 'skill1-details', 'skill4-details')">C</button></td>
+                        <td><button onclick="myFunction('skill4-details', 'skill2-details', 'skill3-details', 'skill1-details')">VBA</button></td>
+                    </tr>
+                </table>
+                <div class="skill1-detail">
+                    <div id="skill1-details" class="skill">
+                        This is my DIV1 element1.
+                    </div>
+                    <div id="skill2-details" class="skill">
+                        This is my DIV2 element1.
+                    </div>
+                    <div id="skill3-details" class="skill">
+                        This is my DIV3 element1.
+                    </div>
+                    <div id="skill4-details" class="skill">
+                        This is my DIV4 element1.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 5: End -->
+            <div id="end">
+                <h3>Here is the end of Mike's Home Page !</h3>
+            </div>
+        </div>
+
+        <script>
+            function myFunction(id1, id2, id3, id4) {
+              var x1 = document.getElementById(id1);
+              var x2 = document.getElementById(id2);
+              var x3 = document.getElementById(id3);
+              var x4 = document.getElementById(id4);
+              if (x2.style.display === "block") {
+                 x2.style.display = "none";
+              }
+              if (x3.style.display === "block") {
+                 x3.style.display = "none";
+              }
+              if (x4.style.display === "block") {
+                 x4.style.display = "none";
+              }
+              if (x1.style.display === "block") {
+                 x1.style.display = "none";
+                 x1.scrollIntoView();
+              } else {
+                 x1.style.display = "block";
+              }
+            }
+        </script>
+    </body>
+</html>
